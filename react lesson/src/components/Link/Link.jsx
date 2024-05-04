@@ -1,10 +1,11 @@
-export function Link(props) {
-  const adress = "https://zrozumiecreact.pl";
-  const target = props.shouldOpenNewTab ? "_blank" : "";
-  const rel = props.shouldOpenNewTab ? "noopener noreffer" : "";
+const adress = "https://zrozumiecreact.pl";
+
+export function Link({ text = adress, shouldOpenNewTab }) {
+  const target = shouldOpenNewTab ? "_blank" : "";
+  const rel = shouldOpenNewTab ? "noopener noreffer" : "";
   return (
     <a href={adress} target={target} rel={rel}>
-      {props.text}
+      {text}
     </a>
   );
 }

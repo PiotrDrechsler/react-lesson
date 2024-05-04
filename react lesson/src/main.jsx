@@ -14,7 +14,7 @@ const element = (
         harum accusantium, eaque quo nemo numquam natus reiciendis dolorum esse
         rem.
       </p>
-      <Link text="https://zrozumiecreact.pl!" shouldOpenNewTab={false} />
+      <Link shouldOpenNewTab={false} />
     </main>
   </>
 );
