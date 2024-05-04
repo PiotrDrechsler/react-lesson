@@ -17,8 +17,16 @@ const element = (
       </p>
       <Link shouldOpenNewTab={false} />
       <h1>Galeria zwierząt</h1>
-      <Animal name="Pies" imgSrc="https://zrozumiecreact.pl/dog.jpg" />
-      <Animal name="Kot" imgSrc="https://zrozumiecreact.pl/cat.jpg" />
+      <Animal
+        name="Pies"
+        imgSrc="https://zrozumiecreact.pl/dog.jpg"
+        imgWidth={300}
+      />
+      <Animal
+        name="Kot"
+        imgSrc="https://zrozumiecreact.pl/cat.jpg"
+        imgWidth={350}
+      />
       <Animal name="Kaczka" imgSrc="https://zrozumiecreact.pl/duck.jpg" />
     </main>
   </>
