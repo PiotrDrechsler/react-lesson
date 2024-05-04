@@ -1,36 +1,22 @@
+import React from "react";
 import ReactDOM from "react-dom/client";
 
-const stringContent = "Test 1!";
-const numberContent = 13;
-const calcContent = 10 + 5;
-function getRandomNumber() {
-  console.log(Math.round(Math.random() * 100));
-}
-const person = {
-  name: "Filip",
-  age: 29,
-};
-const paragraphElement = (
-  <>
-    <h2>Heading</h2>
-    <a href="http://zrozumiecReact.pl" className="link" for="">
-      Strona kursu
-    </a>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi numquam,
-      corporis nam voluptate libero quas. Placeat ipsum unde quidem voluptatem.
-    </p>
-  </>
-);
+import { Link } from "./components/Link/Link";
+
 const element = (
-  <div>
-    {paragraphElement}
-    {paragraphElement}
-    {paragraphElement}
-    {paragraphElement}
-    {paragraphElement}
-    {paragraphElement}
-  </div>
+  <>
+    <h1>Nasza Strona!</h1>
+    <main>
+      <Link text="Sprawdź już teraz!" shouldOpenNewTab={true} />
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima soluta
+        inventore repudiandae autem commodi culpa tempora at sequi asperiores,
+        harum accusantium, eaque quo nemo numquam natus reiciendis dolorum esse
+        rem.
+      </p>
+      <Link shouldOpenNewTab={false} />
+    </main>
+  </>
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(element);
