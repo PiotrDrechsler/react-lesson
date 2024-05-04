@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { Link } from "./components/Link/Link";
+import { Animal } from "./components/Animal/Animal";
 
 const element = (
   <>
@@ -15,6 +16,10 @@ const element = (
         rem.
       </p>
       <Link shouldOpenNewTab={false} />
+      <h1>Galeria zwierząt</h1>
+      <Animal name="Pies" imgSrc="https://zrozumiecreact.pl/dog.jpg" />
+      <Animal name="Kot" imgSrc="https://zrozumiecreact.pl/cat.jpg" />
+      <Animal name="Kaczka" imgSrc="https://zrozumiecreact.pl/duck.jpg" />
     </main>
   </>
 );
