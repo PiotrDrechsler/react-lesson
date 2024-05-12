@@ -4,10 +4,13 @@ import ReactDOM from "react-dom/client";
 import { Link } from "./components/Link/Link";
 import { Animal } from "./components/Animal/Animal";
 import { HeadingItalic } from "./components/HeadingItalic/HeadingItalic";
+import { Logger } from "./components/Logger/Logger";
 
 const element = (
   <>
-    <HeadingItalic>Nasza Super Strona</HeadingItalic>
+    <Logger>
+      <HeadingItalic>Nasza Super Strona</HeadingItalic>
+    </Logger>
     <main>
       <Link text="Sprawdź już teraz!" shouldOpenNewTab={true} />
       <p>
