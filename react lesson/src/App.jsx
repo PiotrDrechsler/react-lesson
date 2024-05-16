@@ -1,5 +1,7 @@
 import React from "react";
 
+import PersonInfo from "./components/PersonInfo/PersonInfo";
+
 function App() {
   const jan = {
     name: "Jan",
@@ -15,19 +17,10 @@ function App() {
     tel: "123-456-111",
   };
   return (
-    <address>
-      <div>
-        <span>
-          {jan.name} {jan.lastName}
-        </span>
-      </div>
-      <div>
-        Email: <a href={`mailto:${jan.mail}`}>{jan.mail}</a>
-      </div>
-      <div>
-        Tel: <a href={`tel:${jan.tel}`}>{jan.tel}</a>
-      </div>
-    </address>
+    <>
+      
+      <PersonInfo></PersonInfo>
+    </>
   );
 }
 
