@@ -4,8 +4,15 @@ function App() {
   const jan = {
     name: "Jan",
     lastName: "Kowalski",
-    mail: "j.kow@gmail.com",
+    mail: "jan.kow@gmail.com",
     tel: "123-456-789",
+  };
+
+  const janina = {
+    name: "Janina",
+    lastName: "Kowalska",
+    mail: "janina.kow@gmail.com",
+    tel: "123-456-111",
   };
   return (
     <address>
