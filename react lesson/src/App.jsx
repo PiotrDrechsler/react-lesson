@@ -16,11 +16,19 @@ function App() {
     mail: "janina.kow@gmail.com",
     tel: "123-456-111",
   };
+
+  const dio = {
+    name: "Dio",
+    lastName: "Kowalski",
+    mail: "dio.kow@gmail.com",
+  };
   return (
     <>
       <PersonInfo person={janina} />
       <br />
       <PersonInfo person={jan} />
+      <br />
+      <PersonInfo person={dio} />
     </>
   );
 }
