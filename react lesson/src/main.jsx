@@ -5,9 +5,13 @@ import { Link } from "./components/Link/Link";
 import { Animal } from "./components/Animal/Animal";
 import { HeadingItalic } from "./components/HeadingItalic/HeadingItalic";
 import { Logger } from "./components/Logger/Logger";
+import { TestComponent } from "./components/TestComponent";
 
 const element = (
   <>
+    <h1>TEST</h1>
+    <TestComponent />
+    {/*
     <Logger>
       <HeadingItalic>Nasza Super Strona</HeadingItalic>
     </Logger>
@@ -33,6 +37,7 @@ const element = (
       />
       <Animal name="Kaczka" imgSrc="https://zrozumiecreact.pl/duck.jpg" />
     </main>
+    */}
   </>
 );
 
