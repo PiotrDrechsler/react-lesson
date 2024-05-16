@@ -11,9 +11,11 @@ export function PersonInfo({ person }) {
       <div>
         Email: <a href={`mailto:${person.mail}`}>{person.mail}</a>
       </div>
-      <div>
-        Tel: <a href={`tel:${person.tel}`}>{person.tel}</a>
-      </div>
+      {person.tel && (
+        <div>
+          Tel: <a href={`tel:${person.tel}`}>{person.tel}</a>
+        </div>
+      )}
     </address>
   );
 }
