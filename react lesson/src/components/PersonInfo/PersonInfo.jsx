@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PersonInfo({ person }) {
+export function PersonInfo({ person }) {
   return (
     <address>
       <div>

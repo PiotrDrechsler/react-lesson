@@ -1,6 +1,6 @@
 import React from "react";
 
-import PersonInfo from "./components/PersonInfo/PersonInfo";
+import { PersonInfo } from "./components/PersonInfo/PersonInfo";
 
 function App() {
   const jan = {
@@ -18,8 +18,9 @@ function App() {
   };
   return (
     <>
-      
-      <PersonInfo></PersonInfo>
+      <PersonInfo person={janina} />
+      <br />
+      <PersonInfo person={jan} />
     </>
   );
 }
