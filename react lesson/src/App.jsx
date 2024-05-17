@@ -28,6 +28,7 @@ function App() {
   const jan = { name: "Jan", age: 43, isAdmin: true, country: "PL" };
   const juan = { name: "Juan", age: 15, isAdmin: true };
   const jonas = { name: "Jonas", age: 18, isAdmin: false, country: "GER" };
+
   return (
     <>
       <PersonInfo person={janina} />
