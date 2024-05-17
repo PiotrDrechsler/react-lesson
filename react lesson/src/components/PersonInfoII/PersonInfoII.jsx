@@ -9,7 +9,7 @@ export function PersonInfoII({ person }) {
       {/* display span here if the person is of age */}
       <span> {person.age >= 18 && "Adult"}</span>
       {/* display paragraph with nationality here */}
-      {person.country && <p>{person.country}</p>}
+      {person.country && <p>From:{person.country}</p>}
     </>
   );
 }
