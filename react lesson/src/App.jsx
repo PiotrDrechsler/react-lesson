@@ -31,6 +31,7 @@ function App() {
 
   return (
     <>
+      <img src="/images/dog.jpg" alt="dog" />
       <PersonInfo person={janina} />
       <br />
       <PersonInfo person={andrzej} />
@@ -44,6 +45,7 @@ function App() {
       <PersonInfoII person={juan} />
       <br />
       <PersonInfoII person={jonas} />
+      <img src="/dog.jpg" alt="dog" />
     </>
   );
 }
