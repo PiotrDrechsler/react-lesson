@@ -3,6 +3,8 @@ import React from "react";
 import { PersonInfo } from "./components/PersonInfo/PersonInfo";
 import { PersonInfoII } from "./components/PersonInfoII/PersonInfoII";
 
+import dogImg from "./assets/dog.jpg";
+
 function App() {
   const andrzej = {
     name: "Jan",
@@ -45,7 +47,7 @@ function App() {
       <PersonInfoII person={juan} />
       <br />
       <PersonInfoII person={jonas} />
-      <img src="/dog.jpg" alt="dog" />
+      <img src={dogImg} alt="dog" />
     </>
   );
 }
