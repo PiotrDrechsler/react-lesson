@@ -1,7 +1,7 @@
 import React from "react";
 
-import { PersonInfo } from "./components/PersonInfo/PersonInfo";
-import { PersonInfoII } from "./components/PersonInfoII/PersonInfoII";
+import { PersonInfo } from "./components/Fundamentals/PersonInfo/PersonInfo";
+import { PersonInfoII } from "./components/Fundamentals/PersonInfoII/PersonInfoII";
 
 import dogImg from "./assets/dog.jpg";
 
