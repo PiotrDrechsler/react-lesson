@@ -1,18 +1,9 @@
 import React from "react";
 
 function App() {
-  function logMouseLeave() {
-    console.log("Mouse move off!");
+  function handleClick() {
+    console.log("Clicked!");
   }
-  const buttonEl = (
-    <button
-      onClick={() => console.log("Click!")}
-      onMouseEnter={() => console.log("Mouse move on!")}
-      onMouseLeave={logMouseLeave}
-    >
-      Pokaż spoiler
-    </button>
-  );
 
   return (
     <>
@@ -20,7 +11,7 @@ function App() {
       <h2>Rok produkcji: 1980</h2>
       <h2>Fabuła</h2>
       <p>Dobrzy walczą ze złymi. Trzeba wyłączyć pole siłowe.</p>
-      {buttonEl}
+      <button onClick={handleClick}> Pokaż spoiler</button>
       <p>Vader okazuje się być ojcem Luka.</p>
     </>
   );
