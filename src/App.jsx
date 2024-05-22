@@ -1,11 +1,18 @@
 import React from "react";
 
 function App() {
-  const buttonEl = <button>Pokaż spoiler</button>;
-
-  // document.querySelector("button").addEventListener("click", () => {
-  //     alert("Klik");
-  // });
+  function logMouseLeave() {
+    console.log("Mouse move off!");
+  }
+  const buttonEl = (
+    <button
+      onClick={() => console.log("Click!")}
+      onMouseEnter={() => console.log("Mouse move on!")}
+      onMouseLeave={logMouseLeave}
+    >
+      Pokaż spoiler
+    </button>
+  );
 
   return (
     <>
