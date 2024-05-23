@@ -10,8 +10,8 @@ export default function VariousEvents() {
       <hr />
 
       <h2>keydown</h2>
-      {/* Dodaj obsługę wciśnięcia klawisza klawiatury i wyświetl alert */}
-      <input type="number" />
+      {/* Add support for keyboard key press and display alert */}
+      <input type="number" onKeyDown={() => alert("onKeyDown")} />
       <hr />
 
       <h2>double click</h2>
