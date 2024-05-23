@@ -1,6 +1,7 @@
 import React from "react";
 
 import ServiceRating from "./components/RenderingAndState/ServiceRating/ServiceRating";
+import VariousEvents from "./components/RenderingAndState/VariousEvents/VariousEvents";
 
 function App() {
   function handleClick() {
@@ -16,6 +17,7 @@ function App() {
       <button onClick={handleClick}> Pokaż spoiler</button>
       <p>Vader okazuje się być ojcem Luka.</p>
       <ServiceRating />
+      <VariousEvents />
     </>
   );
 }
