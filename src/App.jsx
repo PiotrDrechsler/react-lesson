@@ -1,20 +1,25 @@
 import React from "react";
 
-function App() {
-  const buttonEl = <button>Pokaż spoiler</button>;
+import ServiceRating from "./components/RenderingAndState/ServiceRating/ServiceRating";
+import VariousEvents from "./components/RenderingAndState/VariousEvents/VariousEvents";
+import EventInformation from "./components/RenderingAndState/EventInformation/EventInformation";
 
-  // document.querySelector("button").addEventListener("click", () => {
-  //     alert("Klik");
-  // });
+function App() {
+  function handleClick() {
+    console.log("Clicked!");
+  }
 
   return (
     <>
+      <EventInformation />
       <h1>Gwiezdne wojny V</h1>
       <h2>Rok produkcji: 1980</h2>
       <h2>Fabuła</h2>
       <p>Dobrzy walczą ze złymi. Trzeba wyłączyć pole siłowe.</p>
-      {buttonEl}
+      <button onClick={handleClick}> Pokaż spoiler</button>
       <p>Vader okazuje się być ojcem Luka.</p>
+      <ServiceRating />
+      <VariousEvents />
     </>
   );
 }
