@@ -1,9 +1,10 @@
 import React from "react";
 
 export default function EventInformation() {
-  function showAlert() {
+  function showAlert(event) {
     {
-      /* Tutaj wywołaj alert z wybraną opcją */
+      const selectedValue = event.target.value;
+      alert(`Selected value: ${selectedValue}`);
     }
   }
 
