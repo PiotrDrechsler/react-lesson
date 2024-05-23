@@ -1,6 +1,10 @@
 import React from "react";
 
 export default function VariousEvents() {
+  const handleSelectChange = (event) => {
+    const selectedValue = event.target.value;
+    alert(`Selected value: ${selectedValue}`);
+  };
   return (
     <>
       <h1>Events List</h1>
@@ -20,8 +24,8 @@ export default function VariousEvents() {
       <hr />
 
       <h2>change</h2>
-      {/* Dodaj obsługę zmiany wartości selecta i wyświetl alert */}
-      <select>
+      {/* Add support for changing select values and display alert */}
+      <select onChange={handleSelectChange}>
         <option value="A">OptionA</option>
         <option value="B">OptionB</option>
       </select>
