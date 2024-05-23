@@ -15,7 +15,7 @@ export default function VariousEvents() {
       <hr />
 
       <h2>double click</h2>
-      {/* Dodaj obsługę podwójnego kliknięcia i wyświetl alert */}
+      {/* Add support for double-clicking and display an alert */}
       <button onDoubleClick={() => alert("onDoubleClick")}>Double click</button>
       <hr />
 
