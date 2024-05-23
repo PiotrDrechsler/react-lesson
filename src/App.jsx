@@ -1,5 +1,7 @@
 import React from "react";
 
+import ServiceRating from "./components/RenderingAndState/ServiceRating/ServiceRating";
+
 function App() {
   function handleClick() {
     console.log("Clicked!");
@@ -13,6 +15,7 @@ function App() {
       <p>Dobrzy walczą ze złymi. Trzeba wyłączyć pole siłowe.</p>
       <button onClick={handleClick}> Pokaż spoiler</button>
       <p>Vader okazuje się być ojcem Luka.</p>
+      <ServiceRating />
     </>
   );
 }
