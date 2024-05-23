@@ -5,6 +5,10 @@ export default function VariousEvents() {
     const selectedValue = event.target.value;
     alert(`Selected value: ${selectedValue}`);
   };
+
+  const handleBlur = () => {
+    alert("Input blurred");
+  };
   return (
     <>
       <h1>Events List</h1>
@@ -32,8 +36,8 @@ export default function VariousEvents() {
       <hr />
 
       <h2>blur</h2>
-      {/* Dodaj obsługę blura i wyświetl alert */}
-      <input />
+      {/* Add blur support and display alert */}
+      <input onBlur={handleBlur} />
       <hr />
     </>
   );
