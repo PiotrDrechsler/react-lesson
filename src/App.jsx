@@ -2,6 +2,7 @@ import React from "react";
 
 import ServiceRating from "./components/RenderingAndState/ServiceRating/ServiceRating";
 import VariousEvents from "./components/RenderingAndState/VariousEvents/VariousEvents";
+import EventInformation from "./components/RenderingAndState/EventInformation/EventInformation";
 
 function App() {
   function handleClick() {
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <>
+      <EventInformation />
       <h1>Gwiezdne wojny V</h1>
       <h2>Rok produkcji: 1980</h2>
       <h2>Fabuła</h2>
