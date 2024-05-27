@@ -1,7 +1,6 @@
 import React from "react";
 
-export function Animal({ name, imgSrc, imgWidth = 200 }) {
-
+export function Props({ name, imgSrc, imgWidth = 200 }) {
   return (
     <section>
       <h2>{name}</h2>

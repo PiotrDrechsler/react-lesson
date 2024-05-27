@@ -1,5 +1,9 @@
 import React from "react";
 
+import image from "./assets/dog.jpg";
+
+import { Props } from "./components/Fundamentals/Props/Props";
+
 import ServiceRating from "./components/RenderingAndState/ServiceRating/ServiceRating";
 import VariousEvents from "./components/RenderingAndState/VariousEvents/VariousEvents";
 import EventInformation from "./components/RenderingAndState/EventInformation/EventInformation";
@@ -11,6 +15,7 @@ function App() {
 
   return (
     <>
+      <Props name="Here comes the Dog!" imgSrc={image} />
       <EventInformation />
       <h1>Gwiezdne wojny V</h1>
       <h2>Rok produkcji: 1980</h2>
