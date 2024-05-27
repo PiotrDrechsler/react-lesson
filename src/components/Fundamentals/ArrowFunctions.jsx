@@ -4,7 +4,7 @@ let a = Math.floor(Math.random() * 10 + 1);
 
 let b = Math.floor(Math.random() * 10 + 1);
 
-export function TestComponent() {
+export function ArrowFunctions() {
   function greetings(text) {
     return `Hello, ${text}!`;
   }
@@ -23,7 +23,7 @@ export function TestComponent() {
   console.log(sum(a, b));
   return (
     <>
-      <h2>TestComponent</h2>
+      <h2>Arrow Functions</h2>
     </>
   );
 }
