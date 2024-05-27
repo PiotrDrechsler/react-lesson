@@ -2,8 +2,10 @@ import React from "react";
 
 import image from "./assets/dog.jpg";
 
-import { Props } from "./components/Fundamentals/Props";
-import { ArrowFunctions } from "./components/Fundamentals/ArrowFunctions";
+//F U N D A M E N T A L S
+import { Props } from "./components/Fundamentals/Props"; //basic props component
+import { ArrowFunctions } from "./components/Fundamentals/ArrowFunctions"; //easy arrow function
+import { PropsChildren } from "./components/Fundamentals/PropsChildren"; //add italic font style for children
 
 import ServiceRating from "./components/RenderingAndState/ServiceRating/ServiceRating";
 import VariousEvents from "./components/RenderingAndState/VariousEvents/VariousEvents";
@@ -16,8 +18,11 @@ function App() {
 
   return (
     <>
-      <Props name="Here comes the Dog!" imgSrc={image} />
-      <ArrowFunctions />
+      {/* F U N D A M E N T A L S */}
+      <PropsChildren>
+        <Props name="Here comes the Dog!" imgSrc={image} />
+        <ArrowFunctions />
+      </PropsChildren>
       <EventInformation />
       <h1>Gwiezdne wojny V</h1>
       <h2>Rok produkcji: 1980</h2>
