@@ -1,6 +1,6 @@
 const adress = "https://zrozumiecreact.pl";
 
-export function Link({ text = adress, shouldOpenNewTab }) {
+export function PropsDestructuring({ text = adress, shouldOpenNewTab }) {
   const target = shouldOpenNewTab ? "_blank" : "";
   const rel = shouldOpenNewTab ? "noopener noreffer" : "";
   return (

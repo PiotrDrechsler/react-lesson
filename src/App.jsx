@@ -6,6 +6,7 @@ import image from "./assets/dog.jpg";
 import { Props } from "./components/Fundamentals/Props"; //basic props component
 import { ArrowFunctions } from "./components/Fundamentals/ArrowFunctions"; //easy arrow function
 import { PropsChildren } from "./components/Fundamentals/PropsChildren"; //add italic font style for children
+import { PropsDestructuring } from "./components/Fundamentals/PropsDestructuring"; //destructuring props
 
 import ServiceRating from "./components/RenderingAndState/ServiceRating/ServiceRating";
 import VariousEvents from "./components/RenderingAndState/VariousEvents/VariousEvents";
@@ -21,6 +22,7 @@ function App() {
       {/* F U N D A M E N T A L S */}
       <PropsChildren>
         <Props name="Here comes the Dog!" imgSrc={image} />
+        <PropsDestructuring shouldOpenNewTab />
         <ArrowFunctions />
       </PropsChildren>
       <EventInformation />
