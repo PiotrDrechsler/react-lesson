@@ -4,7 +4,7 @@ import image from "./assets/dog.jpg";
 
 //F U N D A M E N T A L S
 import { Props } from "./components/Fundamentals/Props"; //basic props component
-import { PropsDynamic } from "./components/Fundamentals/PersonInfo";
+import { PropsDynamic } from "./components/Fundamentals/PersonInfo"; //component with dynamic props data 
 import { ArrowFunctions } from "./components/Fundamentals/PropsDynamic"; //easy arrow function
 import { PropsChildren } from "./components/Fundamentals/PropsChildren"; //add italic font style for children
 import { PropsChildrenWithData } from "./components/Fundamentals/PropsChildrenWithData"; //add console.log info with time data when children copmonent Was rendered
