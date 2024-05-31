@@ -1,6 +1,6 @@
 import React from "react";
 
-export function PersonInfo({ person }) {
+export function PropsDynamic({ person }) {
   return (
     <address>
       <div>
