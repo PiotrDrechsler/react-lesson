@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function EventInformation() {
+export default function OnChange() {
   function showAlert(event) {
     {
       const selectedValue = event.target.value;

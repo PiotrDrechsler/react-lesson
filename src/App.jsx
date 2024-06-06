@@ -4,7 +4,7 @@ import image from "./assets/dog.jpg";
 
 //F U N D A M E N T A L S
 import { Props } from "./components/Fundamentals/Props"; //basic props component
-import { PropsDynamic } from "./components/Fundamentals/PersonInfo"; //component with dynamic props data 
+import { PropsDynamic } from "./components/Fundamentals/PersonInfo"; //component with dynamic props data
 import { ArrowFunctions } from "./components/Fundamentals/PropsDynamic"; //easy arrow function
 import { PropsChildren } from "./components/Fundamentals/PropsChildren"; //add italic font style for children
 import { PropsChildrenWithData } from "./components/Fundamentals/PropsChildrenWithData"; //add console.log info with time data when children copmonent Was rendered
@@ -12,7 +12,7 @@ import { PropsDestructuring } from "./components/Fundamentals/PropsDestructuring
 
 import ServiceRating from "./components/RenderingAndState/ServiceRating/ServiceRating";
 import VariousEvents from "./components/RenderingAndState/VariousEvents/VariousEvents";
-import EventInformation from "./components/RenderingAndState/EventInformation/EventInformation";
+import OnChange from "./components/RenderingAndState/OnChange"; //basic onChange handler effect
 
 const person = {
   name: "Dio",
@@ -38,7 +38,7 @@ function App() {
         </PropsChildrenWithData>
         <ArrowFunctions />
       </PropsChildren>
-      <EventInformation />
+      <OnChange />
       <h1>Gwiezdne wojny V</h1>
       <h2>Rok produkcji: 1980</h2>
       <h2>Fabuła</h2>
